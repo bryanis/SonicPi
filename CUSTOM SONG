@@ -1,0 +1,45 @@
+# Custom Song
+use_bpm 200
+use_synth :piano
+
+live_loop :spidey do
+  #Measure1
+  play :d4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :a4
+  sleep 1.5
+  sleep 1
+  
+  #Measure2
+  play :ab4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :d4
+  sleep 1.5
+  sleep 1
+  
+  #Measure3
+  play :d4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :a4
+  sleep 0.5
+  sleep 0.5
+  play :bb4
+  sleep 0.5
+  play :a4
+  sleep 1
+  
+  #Measure4
+  play :ab4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :d4
+  sleep 1.5
+  sleep 1
+end
