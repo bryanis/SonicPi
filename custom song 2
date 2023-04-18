@@ -1,0 +1,83 @@
+# Custom Song 2
+use_bpm 90
+use_synth :piano
+
+wtv = "C:/Users/Bryan Mora/Downloads/sunfglower.wav"
+
+sample wtv, amp: 2
+
+live_loop :spidey do
+  #Measure 1
+  play :d3
+  sleep 0.5
+  play :d3
+  sleep 0.5
+  play :d2
+  sleep 1
+  play :d3
+  sleep 1
+  play :d2
+  sleep 1
+  
+  #Measure2
+  play :d3
+  sleep 0.5
+  play :d3
+  sleep 0.5
+  play :d2
+  sleep 0.5
+  play :a3
+  sleep 0.5
+  play :b3
+  sleep 1
+  play :d4
+  sleep 1
+  
+  #Measure3
+  play :d2
+  play :d4
+  sleep 1.5
+  play :d2
+  sleep 0.5
+  play :d2
+  sleep 2
+  
+  #Measure4
+  sleep 0.5
+  play :d2
+  sleep 0.5
+  play :d2
+  sleep 1
+  play :a4
+  sleep 1
+  play :b4
+end
+
+sleep 16
+
+live_loop :beat do
+  sleep 0.5
+  sample :bd_808,amp: 15
+  sleep 1
+  sample :bd_808,amp: 10
+  sleep 1
+  sample :bd_808,amp: 5
+  sleep 1
+  sample :bd_808,amp: 10
+  sleep 1
+  sample :bd_808,amp: 15
+  sleep 1
+  sample :bd_808,amp: 10
+  sleep 1
+  sample :bd_808,amp: 5
+  sleep 1
+  sample :bd_808,amp: 10
+  sleep 0.5
+end
+
+sleep 16
+
+live_loop :beat do
+  sample :loop_amen, beat_stretch: 4
+  sleep 4
+end
